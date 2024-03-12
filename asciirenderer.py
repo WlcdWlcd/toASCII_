@@ -2,7 +2,7 @@ from avgs import Avgs
 
 class AsciiRenderer(Avgs):
     def __init__(self):
-        self.chars = '   .",:;!~+-xmo*#W&8@'[::-1]
+        self.chars = '   .",:;!~+-xmo*#W&8@'[::1]
         self.ascii_coef = 255 / (len(self.chars) - 1)
 
     def sliceAsciis(self,image,slice_size):
